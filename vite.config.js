@@ -4,8 +4,8 @@ import react from '@vitejs/plugin-react-swc';
 export default defineConfig({
   plugins: [react()],
   test: {
-    environment: 'jsdom',
+    environment: 'happy-dom',
     globals: true,
-    setupFiles: './src/setupTests.jsx'  // Changed to .jsx
+    setupFiles: './src/setupTests.jsx'
   }
-});
+})
