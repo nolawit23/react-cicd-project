@@ -1,12 +1,10 @@
+// src/components/Card.jsx
 import React from 'react';
-import gpaImg from '../assets/gpa.png';  
-import clubImg from '../assets/club.png'; 
-import cyearImg from '../assets/cyear.png'; 
 
 const course = [
     {
         title: 'CGPA',
-        icon: <img src={gpaImg} alt="CGPA Icon" />,  
+        icon: <div>[GPA Icon]</div>,  // Removed image
         content: [
             <p key="cgpa-value">3.39</p>,
             <p key="total-point">Total Points</p>
@@ -14,7 +12,7 @@ const course = [
     },
     {
         title: 'Clubs',
-        icon: <img src={clubImg} alt="club Icon" />,
+        icon: <div>[Club Icon]</div>,  // Removed image
         content: [
             <p key="club-count">2</p>,
             <p key="club-names">Rotary and Art Club</p>
@@ -22,7 +20,7 @@ const course = [
     },
     {
         title: 'Current Year',
-        icon: <img src={cyearImg} alt="cyear Icon" />,
+        icon: <div>[Year Icon]</div>,  // Removed image
         content: [
             <p key="year-info">Third year, 96 Courses Taken</p>,
             <div key="progress" className="year-progress">
@@ -58,5 +56,3 @@ const Card = () => {
 };
 
 export default Card;
-
-

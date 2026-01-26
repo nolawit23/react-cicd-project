@@ -1,6 +1,7 @@
-import React from 'react';
+ import React from 'react';
 import Sidebar from '../components/Sidebar';
-import Content from './content';
+//import Content from './Content';
+import Content from '../components/Content';
 import '../App.css';
 import Profile from '../components/Profile';
 const App = () => {

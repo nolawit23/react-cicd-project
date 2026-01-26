@@ -1,7 +1,7 @@
 import React from 'react';
-import ContentHeader from './contentHeader';
+import ContentHeader from './Pages/ContentHeader';
 import "../styles/content.css";
-import Calendar from '../Pages/Calendar';
+import Calendar from './Calendar';
 
 const Content = () => {
     return (
