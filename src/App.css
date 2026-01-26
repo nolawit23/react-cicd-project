@@ -1,0 +1,40 @@
+.dashboard{
+  display:flex;
+  padding-left: 5px;
+
+}
+.dashboard--content{
+margin:3px 5px 0 0;
+  background: #fff;
+  flex:1;
+  border-radius: 20px;
+  padding :0.1rem;
+  display:flex;
+  gap:0.3rem;
+  justify-content: space-between;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
