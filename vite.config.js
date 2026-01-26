@@ -6,6 +6,12 @@ export default defineConfig({
   test: {
     environment: 'happy-dom',
     globals: true,
-    setupFiles: './src/setupTests.jsx'
+    setupFiles: './src/setupTests.jsx',
+    pool: 'forks',
+    poolOptions: {
+      forks: {
+        singleFork: true
+      }
+    }
   }
-})
+});

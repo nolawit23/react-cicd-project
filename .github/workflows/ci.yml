@@ -1,4 +1,4 @@
-name: React CI Pipeline
+﻿name: React CI Pipeline
 
 on:
   push:
@@ -17,7 +17,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 18
-          cache: 'npm'
+          cache: "npm"
+
+      - name: Clear cache and modules
+        run: |
+          npm cache clean --force
+          rm -rf node_modules
 
       - name: Install dependencies
         run: npm ci
