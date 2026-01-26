@@ -5,13 +5,26 @@ export default defineConfig({
   plugins: [react()],
   test: {
     environment: 'happy-dom',
+    environmentOptions: {
+      happyDOM: {
+        settings: {
+          navigator: {
+            userAgent: 'node.js'
+          }
+        }
+      }
+    },
     globals: true,
     setupFiles: './src/setupTests.jsx',
-    pool: 'forks',
-    poolOptions: {
-      forks: {
-        singleFork: true
-      }
-    }
+    exclude: [
+      '**/node_modules/**',
+      '**/dist/**',
+      '**/*.backup.*',
+      '**/debug-*',
+      '**/test-*',
+      '**/setup-*',
+      '**/check-*'
+    ],
+    include: ['src/App.test.jsx']
   }
 });

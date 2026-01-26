@@ -36,7 +36,6 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
     "happy-dom": "^20.3.9",
-    "jsdom": "^27.4.0",
     "vite": "^5.3.3",
     "vitest": "^4.0.18"
   }
