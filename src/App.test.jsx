@@ -1,5 +1,6 @@
-﻿import React from 'react';
+import React from 'react';
 import { render, screen } from '@testing-library/react';
+import { vi, test, expect } from 'vitest';
 
 // Mock ALL components
 vi.mock('./components/Sidebar', () => ({
@@ -19,5 +20,5 @@ import App from './App.jsx';
 test('renders app', () => {
   render(<App />);
   const appContainer = screen.getByTestId('app-container');
-  expect(appContainer).toBeInTheDocument();
+  expect(appContainer).toBeTruthy();
 });

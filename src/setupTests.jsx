@@ -1,6 +1,5 @@
-﻿// setupTests.jsx
+// setupTests.jsx
 import { vi } from 'vitest';
-import '@testing-library/jest-dom';
 
 // Mock ResizeObserver
 global.ResizeObserver = vi.fn().mockImplementation(() => ({
@@ -15,8 +14,8 @@ vi.mock('*.png', () => ({
 }));
 
 vi.mock('*.jpg', () => ({
-  default: 'test-image.jpg'  
+  default: 'test-image.jpg'
 }));
 
-// Mock CSS imports  
+// Mock CSS imports
 vi.mock('*.css', () => ({}));
