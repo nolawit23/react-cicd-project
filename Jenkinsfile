@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        nodejs 'Node18' // Use the NodeJS you configured in Jenkins
+        nodejs 'Node18'
     }
 
     stages {
@@ -23,6 +23,11 @@ pipeline {
                 bat 'npm run build'
             }
         }
+
+        stage('Test') {
+            steps {
+                bat 'npm test'
+            }
+        }
     }
 }
-
