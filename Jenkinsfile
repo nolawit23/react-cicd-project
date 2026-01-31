@@ -11,5 +11,12 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/nolawit23/react-cicd-project'
             }
         }
+
+        stage('Install Dependencies') {
+            steps {
+                sh 'npm install'
+            }
+        }
     }
 }
+
