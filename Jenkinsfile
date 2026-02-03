@@ -29,5 +29,11 @@ pipeline {
                 bat 'npm test'
             }
         }
+
+        stage('Deploy') {
+            steps {
+                bat 'xcopy dist C:\\deploy\\react-app /E /I /Y'
+            }
+        }
     }
 }
