@@ -6,6 +6,7 @@ pipeline {
     }
 
     stages {
+
         stage('Checkout') {
             steps {
                 git branch: 'main', url: 'https://github.com/nolawit23/react-cicd-project'
@@ -34,6 +35,15 @@ pipeline {
             steps {
                 bat 'xcopy dist C:\\deploy\\react-app /E /I /Y'
             }
+        }
+    }
+
+    post {
+        success {
+            echo '✅ Pipeline completed successfully!'
+        }
+        failure {
+            echo '❌ Pipeline failed!'
         }
     }
 }
