@@ -37,7 +37,7 @@ const course = [
 const Card = () => {
     return (
         <div className="Card--wrapper">
-            <h4 className="main-title">Overalls</h4>
+            <h4 className="main-title">Total</h4>
             <div className="Card--container">
                 {course.map((item, index) => (
                     <div className="card" key={index}>
