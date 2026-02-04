@@ -1,18 +1,18 @@
-// src/components/Card.jsx
+
 import React from 'react';
 
 const course = [
     {
         title: 'CGPA',
-        icon: <div>[GPA Icon]</div>,  // Removed image
+        icon: <div>[GPA Icon]</div>, 
         content: [
-            <p key="cgpa-value">3.39</p>,
+            <p key="cgpa-value">3.37</p>,
             <p key="total-point">Total Points</p>
         ]
     },
     {
         title: 'Clubs',
-        icon: <div>[Club Icon]</div>,  // Removed image
+        icon: <div>[Club Icon]</div>,  
         content: [
             <p key="club-count">2</p>,
             <p key="club-names">Rotary and Art Club</p>
@@ -20,7 +20,7 @@ const course = [
     },
     {
         title: 'Current Year',
-        icon: <div>[Year Icon]</div>,  // Removed image
+        icon: <div>[Year Icon]</div>,  
         content: [
             <p key="year-info">Third year, 96 Courses Taken</p>,
             <div key="progress" className="year-progress">
